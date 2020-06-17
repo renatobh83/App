@@ -14,11 +14,17 @@ pipeline {
       }
     }
 
-    stage('error') {
+    stage('Npm ') {
       steps {
         sh '''cd backend
 npm install
 npm run start &'''
+      }
+    }
+
+    stage('Web') {
+      steps {
+        sh 'wget http://localhost:3001'
       }
     }
 
