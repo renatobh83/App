@@ -12,7 +12,7 @@ class AppController {
     this.express.use(cors());
   }
   router() {
-    this.express.use(require("./route/routes"));
+    this.express.use(require("./router"));
   }
 }
 
