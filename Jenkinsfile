@@ -14,9 +14,11 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
-        sh 'npm run start'
+        sh '''npm install
+cd backend
+npm run start'''
       }
     }
 
