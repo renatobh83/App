@@ -1,15 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Teste') {
-      agent {
-        node {
-          label 'Server'
-        }
-
-      }
+    stage('New Test') {
       steps {
-        echo 'Teste'
+        git(url: 'https://github.com/renatobh83/App.git', branch: 'master')
       }
     }
 
