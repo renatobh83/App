@@ -1,15 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Teste') {
-      agent {
-        node {
-          label 'Server'
-        }
-
-      }
+    stage('New Test') {
       steps {
-        echo 'Teste'
+        sh '''echo PATH = ${PATH}
+echo process.env.PORT'''
       }
     }
 
