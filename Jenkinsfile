@@ -10,7 +10,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'nem run start'
+        sh 'npm run start'
       }
     }
 
