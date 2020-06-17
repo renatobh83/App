@@ -16,9 +16,9 @@ pipeline {
 
     stage('error') {
       steps {
-        sh '''npm install
-cd backend
-npm run start'''
+        sh '''cd backend
+npm install
+npm run start &'''
       }
     }
 
